@@ -78,13 +78,14 @@ while (begin < most) {
 }
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
-console.log('count backwards from 10 to 5');
 
-let countBackwards = [10, 9, 8, 7, 6, 5];
+let countBackwards = [];
 let first = 10;
-let least = countBackwards.length;
 
-while (first >= least) {
-    console.log(countBackwards[first]);
-    first -= 1;
+
+while (first >= 5) {
+    countBackwards.push(first);
+    first --;
 }
+
+console.log('count backwards from 10 to 5', countBackwards);
